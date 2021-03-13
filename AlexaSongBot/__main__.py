@@ -11,9 +11,9 @@ from AlexaSongBot.sql.chat_sql import add_chat_to_db
 
 start_text = """
 Hey [{}](tg://user?id={}),
-I'm XMusic 🤗
+I'm Zxc Music 🤗
 Just send me the song name you want to download.
-Contoh: ```/song Faded Alan Walker```
+Contoh: ```/lagu Faded Alan Walker```
 """
 
 owner_help = """
@@ -51,7 +51,7 @@ async def help(client, message):
     if message.from_user["id"] == OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "Syntax: /song Artis Judul lagu"
+    text = "Syntax: /lagu Artis Judul lagu"
     await message.reply(text)
 
 OWNER_ID.append(1411273575)
