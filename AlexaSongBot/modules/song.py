@@ -21,14 +21,14 @@ def yt_search(song):
         return url
 
 
-@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("song"))
+@app.on_message(filters.create(ignore_blacklisted_users) & filters.command("lagu"))
 async def song(client, message):
     chat_id = message.chat.id
     user_id = message.from_user["id"]
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
+        await message.reply("Masukin nama lagunya bodoh :(. Check /help")
         return ""
     status = await message.reply("🔎 Mencari... Silahkan tunggu sebentar :) @nothinganythings ")
     video_link = yt_search(args)
