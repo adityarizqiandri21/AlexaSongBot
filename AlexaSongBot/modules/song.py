@@ -28,7 +28,7 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Masukin nama lagunya bodoh :(. Check /help")
+        await message.reply("Masukin nama lagunya bodoh :( , check /help")
         return ""
     status = await message.reply("🔎 Mencari... Silahkan tunggu sebentar :) @nothinganythings ")
     video_link = yt_search(args)
