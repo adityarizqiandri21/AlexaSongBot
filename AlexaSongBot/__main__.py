@@ -35,7 +35,7 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Owner", url="https://t.me/X_ImFine"
+                        text="Owner", url="https://t.me/zxcthings"
                     )
                 ]
             ]
